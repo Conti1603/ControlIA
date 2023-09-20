@@ -1,0 +1,16 @@
+
+class Environment [object]:
+  def_init_(self,initial):
+        self.status = initial 
+        self-legend = {False:"tidy", True:"dirty"}
+  def_str_(self):
+        output = "State of the house\n.......\n"
+        output = output + str([f"{self.self-legend{room}}" for room in self.status])
+        return output
+  def get_environment(self,room):
+        return(self.status[room])
+  def set_environment(self,room):
+        self.status[room]= False 
+
+    
+    
